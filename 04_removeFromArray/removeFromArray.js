@@ -1,6 +1,16 @@
-const removeFromArray = function() {
+const removeFromArray = function(x, ...y) {
+    
+      
+        const nu = [];
+       
+        x.forEach((i) => {
+          if (!y.includes(i)) {
+            nu.push(i);
+          }
+        });
+    
+        return nu;
+      };
 
-};
 
-// Do not edit below this line
 module.exports = removeFromArray;
